@@ -1,4 +1,4 @@
-# Baixador de Vídeos
+# Video Chrome Downloader
 
 Extensão para Chrome (Manifest V3) que detecta os vídeos da página e baixa em MP4 com um clique, inclusive streams HLS sem criptografia.
 
