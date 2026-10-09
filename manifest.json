@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Baixador de Vídeos",
+  "version": "2.0.0",
+  "description": "Detecta os vídeos da página e baixa em MP4 com um clique, inclusive streams HLS sem criptografia.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "webRequest", "downloads", "downloads.open", "storage", "declarativeNetRequest",
+    "tabs", "scripting", "offscreen", "sidePanel"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": {
+    "default_title": "Baixador de Vídeos",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+  },
+  "side_panel": { "default_path": "popup.html?panel=1" },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+}
